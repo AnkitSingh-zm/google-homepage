@@ -1,0 +1,135 @@
+body    {
+    font-family: arial, sans-serif;
+    display: block;
+    width: 98vw;
+    height: 96vh;
+    font-size: 14px;
+}
+
+#about {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+#store {
+  position: fixed;
+  top: 20px;
+  left: 100px;
+}
+
+#gmail {
+  position: fixed;
+  right: 280px;
+  top: 20px;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+#images {
+  position: fixed;
+  right: 190px;
+  top: 20px;
+}
+
+#apps {
+  position: fixed;
+  right: 120px;
+  top: 20px;
+}
+
+#sign-in  {
+  background-color: #426CEA;
+  color: white;
+  display: inline-block;
+  padding: 10px;
+  position: fixed;
+  right: 20px;
+}
+
+#advertising {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+
+#business {
+  position: fixed;
+  bottom: 20px;
+  left: 150px;
+}
+
+#how-search-works {
+  position: fixed;
+  bottom: 20px;
+  left: 250px;
+}
+
+#settings {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+#terms {
+  position: fixed;
+  bottom: 20px;
+  right: 120px;
+}
+
+#privacy {
+  position: fixed;
+  bottom: 20px;
+  right: 220px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+#logo {
+  position: fixed;
+  top: 150px;
+  left: 750px;
+}
+
+#search-bar {
+  position: fixed;
+  top: 230px;
+  left: 530px;
+  width: 700px;
+  border-radius: 30px;
+  height: 45px;
+  border: 1px solid #dfe1e5;
+  margin-top: 30px;  
+}
+
+#search-bar:hover {
+  box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+  border-color: rgba(223,225,229,0);
+}
+
+#buttons  {
+  position: fixed;
+  top: 330px;
+  left: 700px;
+  width: 90vw;
+}
+
+.search-button  {
+  margin-left: 20px;
+  color: black;
+  padding: 10px 15px 10px 15px;
+  border-radius: 5px;
+  background-color: hsla(0, 0%, 0%, 0.02);
+}
+
+#footer {
+  background: #F2F2F2;
+  height: 40px;
+  bottom: 0;
+  position: fixed;
+}
