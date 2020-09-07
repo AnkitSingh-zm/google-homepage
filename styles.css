@@ -1,110 +1,139 @@
-body    {
-    font-family: arial, sans-serif;
-    display: block;
-    width: 98vw;
-    height: 96vh;
-    font-size: 14px;
+#wrapper  {
+  display: flex;
+  flex-direction: column;
+  height: 96vh;
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  min-height: 100vh;
 }
 
-#about {
-  position: fixed;
-  top: 20px;
-  left: 20px;
+#top-nav  {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  height: 7vh;
+  justify-content: center;
 }
 
-#store {
-  position: fixed;
-  top: 20px;
-  left: 100px;
+#top-links-left {
+  align-self: center;
+  padding-left: 20px;
+
 }
 
-#gmail {
-  position: fixed;
-  right: 280px;
-  top: 20px;
+#top-links-right {
+  margin-left: auto;
+  align-self: center;
+  padding-right: 20px;
+
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 82px;
+  margin: 50px 15px 15px 15px;
+  flex-grow: 1;
+}
+
+#buttons  {
+  display: flex;
+  margin-top: 20px;
+}
+
+.search-button:hover  {
+  border: 1px solid #c6c6c6;
+  color: #222;
+}
+
+.search-button  {
+  margin: 10px;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  padding: 10px 15px;
+  border-radius: 4px;
+  color: #5F6368;
+}
+
+#apps {
+  position: relative;
+  top: 5px;
+}
+
+#bottom-nav  {
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  height: 4vh;
+  background-color: #f2f2f2;
+}
+
+#bottom-links-left {
+  align-self: center;
+  padding-left: 15px;
+
+}
+
+#bottom-links-right {
+  align-self: center;
+  margin: 0 0 0 auto;
+  border-color: #f2f2f2;
+  padding-right: 15px;
+
+}
+
+a {
+  color: #5f6368;
+  text-decoration: none;
+}
+
+.link {
+  padding-right: 15px;
 }
 
 .link:hover {
   text-decoration: underline;
 }
 
-#images {
-  position: fixed;
-  right: 190px;
-  top: 20px;
-}
-
-#apps {
-  position: fixed;
-  right: 120px;
-  top: 20px;
-}
-
 #sign-in  {
   background-color: #426CEA;
   color: white;
-  display: inline-block;
-  padding: 10px;
-  position: fixed;
-  right: 20px;
+  height: 30px;
+  border: none;
+  border-radius: 2px;
+  margin-left: 10px;
+  padding: 0 13px 0 13px;
 }
 
-#advertising {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
+#search {
+  display: flex;
+  flex-direction: row;
+  position: relative;
 }
 
-#business {
-  position: fixed;
-  bottom: 20px;
-  left: 150px;
+#mag-icon {
+  position: absolute;
+  left: 15px;
+  top: 40px;
 }
 
-#how-search-works {
-  position: fixed;
-  bottom: 20px;
-  left: 250px;
-}
-
-#settings {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-}
-
-#terms {
-  position: fixed;
-  bottom: 20px;
-  right: 120px;
-}
-
-#privacy {
-  position: fixed;
-  bottom: 20px;
-  right: 220px;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-}
-
-#logo {
-  position: fixed;
-  top: 150px;
-  left: 750px;
+#mic {
+  position: absolute;
+  left: 545px;
+  top: 37px;
 }
 
 #search-bar {
-  position: fixed;
-  top: 230px;
-  left: 530px;
-  width: 700px;
-  border-radius: 30px;
+  width: 585px;
+  border-radius: 24px;
   height: 45px;
   border: 1px solid #dfe1e5;
-  margin-top: 30px;  
+  margin-top: 28px;
+  align-self: center;
 }
 
 #search-bar:hover {
@@ -112,24 +141,46 @@ a {
   border-color: rgba(223,225,229,0);
 }
 
-#buttons  {
-  position: fixed;
-  top: 330px;
-  left: 700px;
-  width: 90vw;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-
-.search-button  {
-  margin-left: 20px;
-  color: black;
-  padding: 10px 15px 10px 15px;
-  border-radius: 5px;
-  background-color: hsla(0, 0%, 0%, 0.02);
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
-
-#footer {
-  background: #F2F2F2;
-  height: 40px;
-  bottom: 0;
-  position: fixed;
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
